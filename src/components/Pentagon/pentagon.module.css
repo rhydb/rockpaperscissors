@@ -1,0 +1,78 @@
+.pentagon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.hovering {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hands {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.handContainer {
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: opacity 0.2s ease, top 0.2s ease, left 0.2s ease;
+}
+
+
+.houseHand {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 100%;
+    top: 50%;
+}
+
+@keyframes revealHand {
+    from {
+        opacity: 0.0;
+    }
+    to {
+        opacity: 1.0;
+    }
+}
+
+.revealHandContainer {
+    opacity: 1.0;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    display: block;
+    border-radius: 50%;
+}
+.revealHand  {
+    opacity: 0;
+    animation: revealHand 2s ease 2s;
+    animation-fill-mode: forwards;
+    border-radius: 50%;
+}
+
+.pickText {
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.winState {
+    position: relative;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}

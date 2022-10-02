@@ -1,0 +1,42 @@
+.hand {
+    border-radius: 50%;
+    padding: 15px;
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    border-top: 5px solid #bac0d2;
+}
+.outer {
+    cursor: pointer;
+    padding: 15px; /* thickness of border */
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+}
+
+.outer:hover {
+    transform: scale(1.2);
+}
+
+.rock {
+    background-image: linear-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+    border-bottom: 5px solid #9e1633;
+}
+.paper {
+    background-image: linear-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+    border-bottom: 5px solid #2743c1;
+}
+.scissors {
+    background-image: linear-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+    border-bottom: 5px solid #c86c18;
+}
+.lizard {
+    background-image: linear-gradient(hsl(261, 73%, 60%), hsl(261, 72%, 63%));
+    border-bottom: 5px solid #6038ab;
+}
+.spock {
+    background-image: linear-gradient(hsl(189, 59%, 53%), hsl(189, 58%, 57%));
+    border-bottom: 5px solid #2d8fad;
+}

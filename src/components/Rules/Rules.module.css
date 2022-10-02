@@ -1,0 +1,35 @@
+.background {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.modal {
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    color: #3b4162;
+    padding: 30px;
+}
+.heading {
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.close {
+    cursor: pointer;
+}
